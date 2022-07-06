@@ -1,0 +1,141 @@
+@charset "UTF-8";
+body{
+    background-image: url("home.png");
+    background-size: cover;
+   
+}
+/*ホーム画面のCSS*/
+#tihou_jsc{
+    text-align: center
+}
+#tihouBtn_css{
+    height: 50px;
+    width: 300px;
+    font-size: 200%;
+    border-radius: 0px;
+}
+.tihouSelection{
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+.tihouSelection_jsc{
+    height: 50px;
+    width: 300px;
+    font-size: 200%;
+    border-radius: 0px;
+}
+#japan_jsc{
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+#japannBtn_css{
+    height: 50px;
+    width: 300px;
+    font-size: 200%;
+    border-radius: 0px;
+}
+#return_css{
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 100px;
+    border-radius: 0px;
+}
+#returnBtn_jsc{
+    height: 50px;
+    width: 50px;
+    border-radius: 0px;
+}
+/*ホーム画面CSS終わり*/
+#titlee{
+    font-size: 50px;
+    font-family: serif;
+    text-align: center;/*中央揃え*/
+}
+#strbtntext{
+    text-align: center;/*ボタンの中央揃え*/
+}
+.strbtn{
+    height: 100px;
+    width: 250px;
+    border-radius: 0px;
+}
+#kenimg{
+    text-align: center;/*県の画像を中央揃え*/
+}
+#btnanswer{
+    text-align: center;/*解答ボタンを中央揃え*/
+}
+#btnanswerC1{
+    height: 50px;
+    width: 200px;
+    border-radius: 0px;
+
+}
+#btnanswerC2{
+    height: 50px;
+    width: 200px;
+    border-radius: 0px;
+}
+#btnanswerC3{
+    height: 50px;
+    width: 200px;
+    border-radius: 0px;
+}
+#btncorrect{
+    text-align: center;/*正解ボタンを中央揃え*/
+    
+}
+#correct{
+    height: 50px;
+    width: 200px;
+    background-color: tomato;
+    margin-top: 50px;
+    border-radius: 0px;
+}
+#btnlncorrect{
+    text-align: center;/*不正解ボタンを中央揃え*/
+}
+#lncorrect{
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    margin-top: 50px;
+    border-radius: 0px;
+}
+.correctNum0{
+    display:flex; /*タブを横に並べる*/
+    flex-direction: row-reverse; /*flexを右にから左に配置*/
+   
+}
+
+#home{
+    margin-right: auto; /*ホームボタンだけ左寄せ*/
+}
+#homeBtn{
+    border-radius: 0px;
+}
+#endHome{
+    border-radius: 0px;
+}
+#checkAnswer_cjs{
+    height: 300px;
+    width:  450px;
+    font-size: 400%;
+    border-radius: 0px;
+}
+#checkAnswer_align{
+    text-align: center;
+}
+/*checkAnswer.htmlのCSS*/
+#ansewr_jsa{
+    text-align: center;
+}
+#correctAns{
+    text-align: center;
+    font-size: 50px;
+}
+#answerBox table{
+    margin: auto;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--それぞれのデバイスの大きさに合わせて表示-->
+    <title>都道府県クイズ</title> <!--タブに出る文言-->
+    <meta name="description" content="都道府県の形を見て当てるゲーム">
+    <link rel="stylesheet" href="style.css"> <!--CSSを適用させる-->
+</head>
+<body>
+    <h1 id="titlee">都道府県の形を見て当てるゲーム</h1>
+    <div id="tihou_jsc">
+        <button id="tihouBtn_css" type="button" onclick="tihou()" >地方３択問題</button>
+    </div>
+    <div id="japan_jsc"> 
+        <button id="japannBtn_css" type="button" onclick="japanProblem()">日本３択問題</button>
+    </div>
+<!--地方選択-->
+   <div class="tihouSelection">
+       <button class="tihouSelection_jsc" type="button" onclick="hokkaidou()">北海道地方</button>
+   </div> 
+
+    <div class="tihouSelection">
+       <button class="tihouSelection_jsc" type="button" onclick="touhoku()">東北地方</button>
+    </div>
+
+    <div class="tihouSelection">
+      <button class="tihouSelection_jsc" type="button" onclick="kanntou()">関東地方</button>
+   </div>
+
+    <div class="tihouSelection">  
+       <button class="tihouSelection_jsc" type="button" onclick="tyuubu()">中部地方</button>
+    </div>
+
+    <div class="tihouSelection">
+       <button class="tihouSelection_jsc" type="button" onclick="kinki()">近畿地方</button>
+    </div>
+
+    <div class="tihouSelection">
+      <button class="tihouSelection_jsc" type="button" onclick="tyuugoku()">中国地方</button>
+   </div>
+
+    <div class="tihouSelection">
+       <button class="tihouSelection_jsc" type="button" onclick="sikoku()">四国地方</button>
+    </div>
+
+    <div class="tihouSelection">
+       <button class="tihouSelection_jsc" type="button" onclick="kyuusyuu()">九州地方</button>
+    </div>
+   
+    <div id="return_css">
+      <button id="returnBtn_jsc" type="button" onclick="returnBtn()">戻る</button>
+   </div>
+  
+
+   <div id="kenimg"></div><!--jsで画像を表示させるためのid-->
+   <div id="strbtntext">
+       <button class="strbtn" id="btn" type="button" onclick="strbtn()" >開始</button>
+   </div>
+<!--解答ボタンの表示-->
+   <div  id="btnanswer"> 
+       <button id="btnanswerC1" type="button" onclick="btn1('btnanswerC1')">解答</button>
+       <button id="btnanswerC2" type="button" onclick="btn1('btnanswerC2')">解答</button>
+       <button id="btnanswerC3" type="button" onclick="btn1('btnanswerC3')">解答</button>
+   </div>
+<!--正解ボタンの表示-->
+   <div id="btncorrect">
+       <button id="correct" type="button" onclick="cor()">正解！</button>
+   </div>
+   <!--不正解ボタンの表示-->
+   <div id="btnlncorrect">
+       <button id="lncorrect" type="button" onclick="lnc()">不正解</button>
+   </div>
+<!--問題数、正解数の表示-->
+   <div class="correctNum0">
+          <div class="correctNum1">問正解！</div>
+          <div class="correctNum2" id="correctNum_js" >0</div>
+          <div class="correctNum3" id="probleNum_js">7問中</div>
+          <div id = home >
+            <button id="homeBtn" type="button" onclick="home()">ホーム</button>
+         </div>
+   </div>
+   <button id="endHome" type="button" onclick="home()">終了する</button>
+<!--答え合わせ画面に移行-->
+<div id="correctAns">0</div>
+<div id="checkAnswer_align">
+   <button id="checkAnswer_cjs" type="button" onclick="checkAnswer()">終了！結果を見る</button>
+</div>
+<div id="answerBox">
+
+</div>
+   <script src="app.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,546 @@
+@charset "UTF-8";
+body{
+    margin: 0px;/*画像との謎の余白を消す*/
+}
+h1{
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 15%;
+   
+    /*transform: translate(50px, 50px);/*要素を変化させるためのプロパティ*/
+    text-align: center;
+    font-size:6vw;
+    letter-spacing: 0.1em; /*文字間の隙間を指定するプロパティ*/
+    color: #fff;
+    opacity: 0.9;/*色の濃さ*/
+
+  }
+  
+  .wrapper_1{
+    position: relative;
+  }
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    position: relative;
+      z-index: 1;/*ボックスの重なりの優先順位*/
+      /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+      height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+      width: 100%;
+      
+  }
+  /*　背景画像設定　*/
+  
+  .slider-item01 {
+      background:url(home_Pink.jpg);
+  }
+  
+  .slider-item02 {
+      background:url(home_Purple.jpg);
+  }
+  
+  .slider-item03 {
+      background:url(home_Red.jpg);
+  }
+  
+  .slider-item {
+      width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+      height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+      background-repeat: no-repeat;/*背景画像をリピートしない*/
+      background-position: center;/*背景画像の位置を中央に*/
+      background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+      
+  }
+  ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  
+#uranauBtn{
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 60%;
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #8a35b5;
+    width: 80px;
+    height: 80px;
+    border: double 4px #b53577;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+.btnC{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+#text_1{
+    position: relative;
+    text-align: center;
+    
+    padding-top: 100px;
+    font-size: 300%;
+}
+  
+#thankBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #F0C080;
+    width: 80px;
+    height: 80px;
+    border: double 4px #F0C080;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 3s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  #scaredBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #003659;
+    width: 80px;
+    height: 80px;
+    border: double 4px #003659	;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 4s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  #loveBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #F79CF7;
+    width: 80px;
+    height: 80px;
+    border: double 4px #F79CF7;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 5s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  #sadBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #9CC3EA;
+    width: 80px;
+    height: 80px;
+    border: double 4px #9CC3EA;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 6s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  #friendshipBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #f77a36;
+    width: 80px;
+    height: 80px;
+    border: double 4px #f77a36;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 7s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  #hopeBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #f7de39;
+    width: 80px;
+    height: 80px;
+    border: double 4px ;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 8s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  
+  #farewellBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #96514d;
+    width: 80px;
+    height: 80px;
+    border: double 4px #96514d;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 9s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(300px);/*終わり*/
+    }
+  }
+  #happyBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #A8D178;
+    width: 80px;
+    height: 80px;
+    border: double 4px #A8D178;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: anim 10s forwards;/*アニメーション移動時間*/
+}
+@keyframes anim {
+    0% {
+    transform: translateY(0px);/*移動開始*/
+    }
+  
+    100% {
+    transform: translateY(320px);/*終わり*/
+    }
+  }
+/*季節選択ボタンの真ん中に表示する感情ボタンのcss*/
+  #thankBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #F0C080;
+    width: 80px;
+    height: 80px;
+    border: double 4px #F0C080;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #scaredBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #003659;
+    width: 80px;
+    height: 80px;
+    border: double 4px #003659	;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #loveBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #F79CF7;
+    width: 80px;
+    height: 80px;
+    border: double 4px #F79CF7;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #sadBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #9CC3EA;
+    width: 80px;
+    height: 80px;
+    border: double 4px #9CC3EA;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #friendshipBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #f77a36;
+    width: 80px;
+    height: 80px;
+    border: double 4px #f77a36;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #hopeBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #f7de39;
+    width: 80px;
+    height: 80px;
+    border: double 4px ;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #farewellBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #96514d;
+    width: 80px;
+    height: 80px;
+    border: double 4px #96514d;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #happyBtn2{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #A8D178;
+    width: 80px;
+    height: 80px;
+    border: double 4px #A8D178;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+
+
+  
+#text_2{
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 300%;
+}
+
+  .springBtn_F{
+
+    display: flex;
+    justify-content: center;/*中央揃え*/
+
+  }
+  #springBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #f3bef7;
+    color: #00eb1b;
+    width: 80px;
+    height: 80px;
+    border: double 4px #00eb1b;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .autumnBtn_F{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;/*中央揃え*/
+  }
+  #autumnBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #ff9457;
+    color: #4a4a4a;
+    width: 80px;
+    height: 80px;
+    border: double 4px #4a4a4a;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .sunWin_F{
+    margin-top: 7%;
+    display: flex;
+    justify-content:space-around;
+  }
+  #summerBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #05fcf8;
+    color: #fcf805;
+    width: 80px;
+    height: 80px;
+    border: double 4px #fcf805;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #winterBtn{
+    font-size: 18px;
+    display: inline-block;
+    background: #6962d9;
+    color: #f0f0f0;
+    width: 80px;
+    height: 80px;
+    border: double 4px #f0f0f0;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+
+  #particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-1;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-image: url("backgroundimg.png");
+    background-size: cover;/*背画像*/
+}
+
+#wrapper_2{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+#hanaName{
+  position: relative;
+  top: 20%;
+  text-align: center;
+  font-size: 75px;
+}
+#hanaimgDiv{
+  text-align: center;
+}
+#hanaimg{
+  width: 550px;
+  height: 350px;
+}
+
+#flowering{
+  text-align: center;
+  font-size: 50px;
+}
+
+#floweday{
+  text-align: center;
+  font-size: 50px;
+}
+
+#endDiv{
+margin-left:  50px;
+}
+#end {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background: linear-gradient(#fe5f95 , #ff3f7f);
+  border: 1px solid #fe3276;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+  animation: scale .3s ease-in-out;
+}
+@keyframes scale {
+  50% { transform: scale(1.1); }
+}
